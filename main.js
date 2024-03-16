@@ -11,6 +11,11 @@ function collectionsCard() {
     paintingCards.classList.add('cards')
     container.appendChild(displayCards);
     displayCards.appendChild(paintingCards);
+
+    let artistName = document.createElement('p')
+    artistName.textContent = painting.artist;
+    paintingCards.appendChild(artistName)
+    console.log(painting.artist)
   })
 }
 collectionsCard()

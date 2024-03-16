@@ -12,24 +12,30 @@ background-color: rgb(29, 29, 57);
 
 .container {
   margin-top: 50px;
-  width: 100vw; /* Use vw for viewport width */
-  height: 100vh; /* Use vh for viewport height */
+  width: 100vw;
+  height: 100vh; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
+h1 {
+  padding: 25px;
+}
+
 .display-cards {
+  height: 100vh;
   display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap onto the next row */
-  justify-content: center; /* Center the cards horizontally */
-  gap: 20px; /* Add some space between cards */
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  align-items: center;
+  gap: 20px; 
 }
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
   border: solid 2px white;
   width: 300px;
   height: 300px;
