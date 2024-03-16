@@ -1,6 +1,7 @@
 import { paintingsCollection } from "./collections";
 
 const container = document.querySelector(".container");
+const displayCards = document.querySelector(".display-cards");
 
 function collectionsCard() {
   paintingsCollection.forEach((painting) => {
@@ -8,7 +9,8 @@ function collectionsCard() {
 
     const paintingCards = document.createElement("div")
     paintingCards.classList.add('cards')
-    container.appendChild(paintingCards);
+    container.appendChild(displayCards);
+    displayCards.appendChild(paintingCards);
   })
 }
 collectionsCard()

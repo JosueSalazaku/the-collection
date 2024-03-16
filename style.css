@@ -20,11 +20,18 @@ background-color: rgb(29, 29, 57);
   align-items: center;
 }
 
+.display-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap onto the next row */
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Add some space between cards */
+}
+
 .cards {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   border: solid 2px white;
   width: 300px;
-  height: 700px;
+  height: 300px;
 }
 
