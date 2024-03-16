@@ -17,9 +17,26 @@ function collectionsCard() {
 }
 
 function cardsInfo(painting, paintingCards) {
-  let artistName = document.createElement('p')
+  let artTitle = document.createElement('p');
+  artTitle.textContent = painting.title;
+  paintingCards.appendChild(artTitle)
+
+  let artistName = document.createElement('h1');
   artistName.textContent = painting.artist;
   paintingCards.appendChild(artistName);
+
+  let artDescription = document.createElement('p');
+  artDescription.textContent = painting.description;
+  paintingCards.appendChild(artDescription);
+
+  let artDimensions = document.createElement('p');
+  artDimensions.textContent = painting.dimensions;
+  paintingCards.appendChild(artDimensions);
+
+  let artMedium = document.createElement('p');
+  artMedium.textContent = painting.medium;
+  paintingCards.appendChild(artMedium);
+
   console.log(painting.artist) 
 }
 collectionsCard()
