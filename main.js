@@ -8,6 +8,7 @@ function collectionsCard() {
 
     const paintingCards = document.createElement("div")
     paintingCards.classList.add('cards')
+    container.appendChild(paintingCards);
   })
 }
 collectionsCard()

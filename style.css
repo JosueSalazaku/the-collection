@@ -11,11 +11,20 @@ background-color: rgb(29, 29, 57);
 }
 
 .container {
+  margin-top: 50px;
   width: 100vw; /* Use vw for viewport width */
   height: 100vh; /* Use vh for viewport height */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  border: solid 2px white;
+  width: 300px;
+  height: 700px;
 }
 
