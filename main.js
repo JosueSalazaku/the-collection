@@ -29,6 +29,10 @@ function cardsInfo(painting, paintingCards) {
   artDescription.textContent = painting.description;
   paintingCards.appendChild(artDescription);
 
+  let artStyle = document.createElement('p');
+  artStyle.textContent = painting.style;
+  paintingCards.appendChild(artStyle)
+
   let artDimensions = document.createElement('p');
   artDimensions.textContent = painting.dimensions;
   paintingCards.appendChild(artDimensions);
