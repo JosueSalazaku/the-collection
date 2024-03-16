@@ -15,6 +15,14 @@ function collectionsCard() {
     cardsInfo(painting, paintingCards)
   })
 }
+function cardsImage(painting, paintingCards, cardsInfo) {
+
+  let paintingImg = document.createElement('img');
+  // paintingImg.src = painting.picture;
+
+  paintingCards.appendChild(paintingImg);
+}
+
 
 function cardsInfo(painting, paintingCards) {
   let artTitle = document.createElement('p');
@@ -41,6 +49,10 @@ function cardsInfo(painting, paintingCards) {
   artMedium.textContent = painting.medium;
   paintingCards.appendChild(artMedium);
 
-  console.log(painting.artist) 
+  cardsImage(painting, paintingCards, cardsInfo)
+
 }
+
+
+
 collectionsCard()
