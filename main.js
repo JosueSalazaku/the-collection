@@ -12,10 +12,14 @@ function collectionsCard() {
     container.appendChild(displayCards);
     displayCards.appendChild(paintingCards);
 
-    let artistName = document.createElement('p')
-    artistName.textContent = painting.artist;
-    paintingCards.appendChild(artistName)
-    console.log(painting.artist)
+    cardsInfo(painting, paintingCards)
   })
+}
+
+function cardsInfo(painting, paintingCards) {
+  let artistName = document.createElement('p')
+  artistName.textContent = painting.artist;
+  paintingCards.appendChild(artistName);
+  console.log(painting.artist) 
 }
 collectionsCard()
