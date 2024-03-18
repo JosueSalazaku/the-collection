@@ -21,7 +21,8 @@ background-color: rgb(29, 29, 57);
 }
 
 h1 {
-  padding: 25px;
+  padding: 15px;
+  font-size: 30px;
 }
 
 .display-cards {
@@ -31,17 +32,19 @@ h1 {
   flex-wrap: wrap; 
   justify-content: center; 
   align-items: center;
-  gap: 30px; 
+  gap: 100px; 
 }
 
 .cards {
   display: flex;
   flex-direction: column;
   border: solid 2px white;
+  border-radius: 20px ;
   width: 400px;
   height: 400px;
 }
 
 p {
   padding: 8px;
+  font-size: 15px;
 }
