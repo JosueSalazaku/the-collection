@@ -4,16 +4,15 @@
 }
 
 body {
-font-family:"San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
-color:white ;
-background-color: rgb(29, 29, 57);
-
+  font-family: "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: rgb(29, 29, 57);
 }
 
 .container {
   margin-top: 50px;
   width: 100vw;
-  height: 100vh; 
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -22,29 +21,35 @@ background-color: rgb(29, 29, 57);
 
 h1 {
   padding: 15px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .display-cards {
   height: 100vh;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; 
-  justify-content: center; 
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  gap: 100px; 
+  gap: 100px;
 }
 
 .cards {
   display: flex;
   flex-direction: column;
   border: solid 2px white;
-  border-radius: 20px ;
+  border-radius: 20px;
   width: 400px;
   height: 400px;
 }
 
 p {
-  padding: 8px;
   font-size: 15px;
+gap: 20;
+}
+
+.paintingImg {
+  height: 200px;
+  width: 220px;
+  padding: 20px;
 }

@@ -2,21 +2,23 @@ import { paintingsCollection } from "./collections";
 
 const container = document.querySelector(".container");
 const displayCards = document.querySelector(".display-cards");
+const extraInfo = document.createElement("div");
 
 function collectionsCard() {
   paintingsCollection.forEach((painting) => {
-    console.log(painting);
-
     const paintingCards = document.createElement("div");
     paintingCards.classList.add("cards");
     container.appendChild(displayCards);
     displayCards.appendChild(paintingCards);
-
+    
+    cardsImage(painting, paintingCards);
     cardsInfo(painting, paintingCards);
   });
 }
-function cardsImage(painting, paintingCards, cardsInfo) {
+
+function cardsImage(painting, paintingCards) {
   let paintingImg = document.createElement("img");
+  paintingImg.classList.add("paintingImg")
   paintingImg.src = painting.picture;
   paintingCards.appendChild(paintingImg);
 }
@@ -36,6 +38,7 @@ function cardsInfo(painting, paintingCards) {
 
   let artStyle = document.createElement("p");
   artStyle.textContent = painting.style;
+  artStyle.classList.add("style")
   paintingCards.appendChild(artStyle);
 
   let artDimensions = document.createElement("p");
@@ -45,8 +48,6 @@ function cardsInfo(painting, paintingCards) {
   let artMedium = document.createElement("p");
   artMedium.textContent = painting.medium;
   paintingCards.appendChild(artMedium);
-
-  cardsImage(painting, paintingCards, cardsInfo);
 }
 
 collectionsCard();
